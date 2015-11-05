@@ -5,8 +5,10 @@ from __future__ import (absolute_import,
 
 
 class DictManager:
-    def __init__(self, filename):
+    def __init__(self, filename, key_type, value_type):
         self.filename = filename
+        self.key_type = key_type
+        self.value_type = value_type
         self.map = {}
         self.update()
 
@@ -14,8 +16,9 @@ class DictManager:
         try:
             with open(self.filename, 'r') as f:
                 for line in f:
+                    line = line[:-1]
                     key, value = line.split(',')
-                    self.map[int(key)] = int(value)
+                    self.map[self.key_type(key)] = self.value_type(value)
         except IOError:
             pass  # There probably isn't a file to read yet
 
