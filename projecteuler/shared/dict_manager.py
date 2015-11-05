@@ -16,13 +16,12 @@ class DictManager:
         try:
             with open(self.filename, 'r') as f:
                 for line in f:
-                    line = line[:-1]
+                    if line[-1] in '\n':
+                        line = line[:-1]
                     key, value = line.split(',')
                     self.map[self.key_type(key)] = self.value_type(value)
         except IOError:
             pass  # There probably isn't a file to read yet
-        #except ValueError:
-        #    pass  # It was probably unable to split a blank line
 
     def write(self):
         write_string = ''
