@@ -21,6 +21,8 @@ class DictManager:
                     self.map[self.key_type(key)] = self.value_type(value)
         except IOError:
             pass  # There probably isn't a file to read yet
+        except ValueError:
+            pass  # It was probably unable to split a blank line
 
     def write(self):
         write_string = ''
