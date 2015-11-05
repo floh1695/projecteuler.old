@@ -12,19 +12,19 @@ manager = DictManager(join(dirname(__file__), 'is_prime.csv'), int,
 
 def is_prime(n):
     """Calculate if n is prime or not"""
+    if n < 2:
+        return False
+
     try:
         return manager.get(n)
     except KeyError:
         pass  # Continue on to the rest of the function
 
     value = True
-    if n < 2:
-        return False
-    else:
-        for i in range(2, int(sqrt(n)) + 1):
-            if n % i is 0:
-                value = False
-                break
+    for i in range(2, int(sqrt(n)) + 1):
+        if n % i is 0:
+            value = False
+            break
     manager.add(n, value)
     return value
 
