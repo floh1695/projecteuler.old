@@ -16,7 +16,7 @@ class DictManager:
         try:
             with open(self.filename, 'r') as f:
                 for line in f:
-                    line = line[:-1]
+                    line = line.strip('\n')[0]
                     key, value = line.split(',')
                     self.map[self.key_type(key)] = self.value_type(value)
         except IOError:
