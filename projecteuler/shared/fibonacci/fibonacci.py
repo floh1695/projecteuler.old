@@ -2,7 +2,7 @@
 
 from __future__ import print_function
 
-from shared.dict_manager import DictManager
+from ..dict_manager import DictManager
 from os.path import dirname, join
 
 manager = DictManager(join(dirname(__file__), 'fib.csv'), int, int)

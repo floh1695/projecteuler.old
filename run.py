@@ -6,3 +6,4 @@ if __name__ == '__main__':
     problems.problem_1()
     problems.problem_2()
     problems.problem_3()
+    problems.problem_4()

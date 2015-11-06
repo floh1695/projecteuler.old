@@ -12,7 +12,7 @@ four million, find the sum of the even-valued terms.
 """
 
 from __future__ import print_function
-from shared import fibonacci
+from ..shared import fibonacci
 
 
 def run():

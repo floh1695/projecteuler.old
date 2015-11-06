@@ -8,7 +8,7 @@ What is the largest prime factor of the number 600851475143 ?
 """
 
 from __future__ import print_function
-from shared.prime import factorize
+from ..shared.prime import factorize
 from operator import itemgetter
 
 def run():
