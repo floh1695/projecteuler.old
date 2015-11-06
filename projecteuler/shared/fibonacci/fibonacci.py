@@ -19,7 +19,6 @@ def fibonacci(n):
     except KeyError:
         pass  # Continue on to the rest of the function
 
-    value = None
     if n in (0, 1):
         value = n
     else:
