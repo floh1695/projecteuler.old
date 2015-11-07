@@ -1,14 +1,14 @@
 #!/usr/bin/python2
 
 from __future__ import print_function
-from is_prime import is_prime
+import is_prime as ip
 
 
 def generate_primes(start=2, end=0):
     while True:
         if end and start > end:
             break
-        if is_prime(start):
+        if ip.is_prime(start):
             yield start
         start += 1
 
