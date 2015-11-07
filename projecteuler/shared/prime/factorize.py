@@ -5,7 +5,6 @@ from generate_primes import generate_primes
 
 
 def factorize(number):
-    mem = number
     arr = []
     gen = generate_primes()
     prime = next(gen)

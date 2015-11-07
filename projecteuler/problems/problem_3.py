@@ -8,12 +8,11 @@ What is the largest prime factor of the number 600851475143 ?
 """
 
 from __future__ import print_function
-from ..shared.prime import factorize
-from operator import itemgetter
+from ..shared import factorize
+
 
 def run():
-    value = max(factorize(600851475143))
-    print('3\t: {}'.format(value))
+    print('3\t: {}'.format(max(factorize(600851475143))))
 
 if __name__ == '__main__':
     run()

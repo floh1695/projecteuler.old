@@ -22,7 +22,7 @@ def is_prime(n):
 
     value = True
     for i in range(2, int(sqrt(n)) + 1):
-        if n % i is 0:
+        if n % i == 0:
             value = False
             break
     manager.add(n, value)

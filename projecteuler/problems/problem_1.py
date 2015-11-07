@@ -10,6 +10,7 @@ Find the sum of all the multiples of 3 or 5 below 1000.
 
 from __future__ import print_function
 
+
 def run():
     value = 0
     for i in range(1000):
