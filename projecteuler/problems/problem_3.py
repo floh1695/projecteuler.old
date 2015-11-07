@@ -13,6 +13,3 @@ from ..shared import factorize
 
 def run():
     print('3\t: {}'.format(max(factorize(600851475143))))
-
-if __name__ == '__main__':
-    run()

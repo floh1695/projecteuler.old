@@ -26,6 +26,3 @@ def run():
         else:
             break
     print('2\t: {}'.format(value))
-
-if __name__ == '__main__':
-    run()

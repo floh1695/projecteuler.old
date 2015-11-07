@@ -21,6 +21,3 @@ def run():
         if is_palindrome(result):
             palindromes.append(result)
     print('4\t: {}'.format(max(palindromes)))
-
-if __name__ == '__main__':
-    run()
