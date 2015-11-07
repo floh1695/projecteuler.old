@@ -1,10 +1,8 @@
 #!/usr/bin/python2
 
 from __future__ import print_function
-
 import generate_primes as gp
 from dict_manager import DictManager
-from os.path import dirname, join
 from math import sqrt
 
 manager = DictManager()
@@ -31,5 +29,8 @@ def is_prime(n):
     return value
 
 if __name__ == '__main__':
-    for range_value in range(100000):
+    from time import time
+    t = time()
+    for range_value in range(1000000):
         print('{}\t: {}'.format(range_value, is_prime(range_value)))
+    print(time() - t)

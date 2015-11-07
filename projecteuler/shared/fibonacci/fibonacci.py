@@ -1,9 +1,7 @@
 #!/usr/bin/python2
 
 from __future__ import print_function
-
-from ..dict_manager import DictManager
-from os.path import dirname, join
+from dict_manager import DictManager
 
 manager = DictManager()
 
@@ -27,5 +25,8 @@ def fibonacci(n):
     return value
 
 if __name__ == '__main__':
-    for i in range(1000):
+    from time import time
+    t = time()
+    for i in range(10000):
         print('{}\t: {}'.format(i, fibonacci(i)))
+    print(time() - t)
