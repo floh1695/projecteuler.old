@@ -9,6 +9,7 @@ from problem_6 import run as problem_6
 from problem_7 import run as problem_7
 from problem_8 import run as problem_8
 from problem_9 import run as problem_9
+from problem_10 import run as problem_10
 
 problems = [problem_1,
             problem_2,
@@ -18,4 +19,5 @@ problems = [problem_1,
             problem_6,
             problem_7,
             problem_8,
-            problem_9]
+            problem_9,
+            problem_10]

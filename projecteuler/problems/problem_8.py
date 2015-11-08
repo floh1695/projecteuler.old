@@ -59,3 +59,7 @@ def run():
             largest = next_number
 
     print('8\t: {}'.format(largest))
+
+if __name__ == '__main__':
+    from timeit import timeit
+    timeit(run)

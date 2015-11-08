@@ -26,3 +26,7 @@ def run(last=100):
         sum_of_squares += i**2
     square_of_sums = sum(list(range(1, last + 1)))**2
     print('6\t: {}'.format(square_of_sums - sum_of_squares))
+
+if __name__ == '__main__':
+    from timeit import timeit
+    timeit(run)

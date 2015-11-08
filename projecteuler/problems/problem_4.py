@@ -10,7 +10,7 @@ Find the largest palindrome made from the product of two 3-digit numbers.
 
 from __future__ import print_function
 from itertools import product
-from ..shared import is_palindrome
+from shared import is_palindrome
 
 
 def run():
@@ -21,3 +21,7 @@ def run():
         if is_palindrome(result):
             palindromes.append(result)
     print('4\t: {}'.format(max(palindromes)))
+
+if __name__ == '__main__':
+    from timeit import timeit
+    timeit(run)

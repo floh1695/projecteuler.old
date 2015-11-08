@@ -10,7 +10,11 @@ numbers from 1 to 20?
 """
 
 from __future__ import print_function
-from ..shared import least_common_multiple as lcm
+from shared import least_common_multiple as lcm
 
 def run():
     print('5\t: {}'.format(reduce(lcm, range(1, 21))))
+
+if __name__ == '__main__':
+    from timeit import timeit
+    timeit(run)
