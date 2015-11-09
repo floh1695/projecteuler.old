@@ -16,7 +16,7 @@ from __future__ import print_function
 
 
 def run():
-    print('9\t: {}'.format(None))
+    return 9, None
 
 if __name__ == '__main__':
     from timeit import timeit

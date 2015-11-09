@@ -15,7 +15,7 @@ def run():
     for i in range(1000):
         if i % 3 is 0 or i % 5 is 0:
             value += i
-    print('1\t: {}'.format(value))
+    return 1, value
 
 if __name__ == '__main__':
     from timeit import timeit

@@ -8,6 +8,12 @@ from timeit import timeit
 
 if __name__ == '__main__':
     ft = time()
+    file_string = ''
     for problem in problems:
-        timeit(problem)
-    print('\nTotal time: {}'.format(time() - ft))
+        file_string += timeit(problem)
+        file_string += '\n'
+    total_time = '\nTotal time: {}'.format(time() - ft)
+    print(total_time)
+    with open('benchmark.txt', 'w') as f:
+        f.write(file_string)
+        f.write(total_time)

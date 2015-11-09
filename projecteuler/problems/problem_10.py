@@ -11,7 +11,10 @@ from __future__ import print_function
 from shared import generate_primes
 
 def run():
-    print('10\t: {}'.format(sum(generate_primes(end=2000000))))
+    value = 0
+    for prime in generate_primes(end=2000000):
+        value += prime
+    return 10, value
 
 if __name__ == '__main__':
     from timeit import timeit

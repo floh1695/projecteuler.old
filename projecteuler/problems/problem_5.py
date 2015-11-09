@@ -13,7 +13,7 @@ from __future__ import print_function
 from shared import least_common_multiple as lcm
 
 def run():
-    print('5\t: {}'.format(reduce(lcm, range(1, 21))))
+    return 5, reduce(lcm, range(1, 21))
 
 if __name__ == '__main__':
     from timeit import timeit

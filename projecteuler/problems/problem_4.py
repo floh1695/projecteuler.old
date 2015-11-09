@@ -20,7 +20,7 @@ def run():
         result = factor_a * factor_b
         if is_palindrome(result):
             palindromes.append(result)
-    print('4\t: {}'.format(max(palindromes)))
+    return 4, max(palindromes)
 
 if __name__ == '__main__':
     from timeit import timeit

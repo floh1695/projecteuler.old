@@ -15,7 +15,7 @@ def run():
     gen = generate_primes()
     for _ in xrange(10000):
         next(gen)
-    print('7\t: {}'.format(next(gen)))
+    return 7, next(gen)
 
 if __name__ == '__main__':
     from timeit import timeit

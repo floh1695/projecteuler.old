@@ -25,7 +25,7 @@ def run():
             value += fibonacci_value if fibonacci_value % 2 is 0 else 0
         else:
             break
-    print('2\t: {}'.format(value))
+    return 2, value
 
 if __name__ == '__main__':
     from timeit import timeit

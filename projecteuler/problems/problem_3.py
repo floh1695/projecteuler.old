@@ -12,7 +12,7 @@ from shared import factorize
 
 
 def run():
-    print('3\t: {}'.format(max(factorize(600851475143))))
+    return 3, max(factorize(600851475143))
 
 if __name__ == '__main__':
     from timeit import timeit
