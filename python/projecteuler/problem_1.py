@@ -20,3 +20,4 @@ def run():
 if __name__ == '__main__':
     from timeit import timeit
     timeit(run)
+
