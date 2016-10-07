@@ -24,12 +24,14 @@ def solve primes, ran
       add_until solved_for, j, ifactors.count(j)
     end
   end
+  solved_for
 end
 
 answer = 1
-ran = 2..10
+ran = 2..20
 factors = find_factors ran
 solved_factors = solve factors, ran
+puts solved_factors
 answer = solved_factors.reduce :*
 
 puts "5\t: #{answer}"

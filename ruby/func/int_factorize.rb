@@ -1,11 +1,13 @@
 #!/usr/bin/ruby
 
+require_relative 'int_is_prime'
+
 module IntFactorize
   def factorize
     arr = []
     number = self
     if number < 2
-      raise '#{number} is not prime factorizable.'
+      raise "#{number} is not prime factorizable."
     end
     while not number.is_prime?
       (2..(number/2).floor).each do |i|
