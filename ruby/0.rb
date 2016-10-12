@@ -1,8 +1,8 @@
 #!/usr/bin/ruby
 
-require_relative '1'
-require_relative '2'
-require_relative '3'
-require_relative '4'
-require_relative '5'
+puzzle_numbers = (1..7)
+
+puzzle_numbers.each do |puzzle_number|
+  require_relative puzzle_number.to_s
+end
 

@@ -1,0 +1,14 @@
+#!/bin/bash
+
+filename=$1'.rb'
+touch $filename
+echo '#!/usr/bin/ruby'             > $filename
+echo ''                           >> $filename
+echo 'def main'                   >> $filename
+echo '  answer = 0'               >> $filename
+echo '  puts "'$1'\t: #{answer}"' >> $filename
+echo 'end'                        >> $filename
+echo ''                           >> $filename
+echo 'main'                       >> $filename
+echo ''                           >> $filename
+

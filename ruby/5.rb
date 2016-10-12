@@ -2,6 +2,16 @@
 
 require_relative 'func/prime_tools'
 
+def main
+  answer = 1
+  ran = 2..20
+  factors = find_factors ran
+  solved_factors = solve factors, ran
+  answer = solved_factors.reduce :*
+  
+  puts "5\t: #{answer}"
+end
+
 def find_factors ran
   factors = []
   ran.each do |i|
@@ -27,12 +37,5 @@ def solve primes, ran
   solved_for
 end
 
-answer = 1
-ran = 2..20
-factors = find_factors ran
-solved_factors = solve factors, ran
-puts solved_factors
-answer = solved_factors.reduce :*
-
-puts "5\t: #{answer}"
+main
 
