@@ -10,7 +10,7 @@ require_relative 'func/prime_tools'
 #  * What is the largest prime factor of the number 600851475143 ?
 #=====================================================================
 def main
-  answer = PrimeFactorSet.new(600851475143).largest_prime
+  answer = 600851475143.factorize.max
   puts "3\t: #{answer}"
 end
 
